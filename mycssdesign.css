@@ -1,0 +1,49 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+:root {
+  /*  ===============================
+      Colors
+      ===============================   */
+  --bg-brightblue: hsl(245, 75%, 52%);
+  --bg-paleblue: hsl(225, 100%, 94%);
+  --tm-desaturatedblue: hsl(224, 23%, 55%);
+  --tf-darkblue: hsl(223, 47%, 23%);
+  --bg-verypaleblue: hsl(225, 100%, 98%);
+
+  /* ===============================
+     Fonts
+     ===============================  */
+  --ff-RedHatDisplay: "Red Hat Display", sans-serif;
+  --fs-fontsize: 1rem;
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+  --line-height: 1.5;
+}
+
+/* ==============================
+   Body
+   ==============================  */
+
+body {
+  margin: 0;
+  font-family: var(--ff-RedHatDisplay);
+  font-size: var(--fs-fontsize);
+  font-weight: var(--fw-500);
+  line-height: var(--line-height);
+  color: var(--tm-desaturatedblue);
+  background-color: var(--bg-paleblue);
+  text-align: center;
+}
+
+/* ==============================
+   Layout
+   ============================== */
+
+/* ================================
+   Typography
+   ================================ */
