@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/three-column-card-v1/static/css/main.209cc42e.css",
+    "main.js": "/three-column-card-v1/static/js/main.930a7ae4.js",
+    "static/js/787.d99e927f.chunk.js": "/three-column-card-v1/static/js/787.d99e927f.chunk.js",
+    "index.html": "/three-column-card-v1/index.html",
+    "main.209cc42e.css.map": "/three-column-card-v1/static/css/main.209cc42e.css.map",
+    "main.930a7ae4.js.map": "/three-column-card-v1/static/js/main.930a7ae4.js.map",
+    "787.d99e927f.chunk.js.map": "/three-column-card-v1/static/js/787.d99e927f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.209cc42e.css",
+    "static/js/main.930a7ae4.js"
+  ]
+}
