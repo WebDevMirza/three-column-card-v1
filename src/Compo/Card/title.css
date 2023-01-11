@@ -1,0 +1,6 @@
+h1 {
+  text-transform: uppercase;
+  font-family: var(--ff-sholder);
+  color: var(--td-Verylightgray);
+  letter-spacing: 0.5px;
+}

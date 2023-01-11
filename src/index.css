@@ -1,13 +1,95 @@
-body {
+*,
+::after,
+::before {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  /*  ===============================
+      Colors
+      ===============================   */
+  --bg-Brightorange: hsl(31, 77%, 52%);
+  --bg-Darkcyan: hsl(184, 100%, 22%);
+  --bg-Verydarkcyan: hsl(179, 100%, 13%);
+  --tm-Transparentwhite: hsla(0, 0%, 100%, 0.75); /* paragraph */
+  --td-Verylightgray: hsl(0, 0%, 95%); /*(background, headings, buttons) */
+
+  /* ===============================
+     Fonts
+     ===============================  */
+  --ff-sholder: "Big Shoulders Display", cursive;
+  --ff-lexend: "Lexend Deca", sans-serif;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fw-400: 400;
+  --fw-700: 700;
+  --line-height: 1.5;
 }
+
+/* ==============================
+   Body
+   ==============================  */
+
+body {
+  margin: 0;
+  font-family: var(--ff-lexend);
+  font-size: var(--fs-16);
+  font-weight: var(--fw-400);
+  line-height: var(--line-height);
+  color: var(--tm-Transparentwhite);
+  background-color: var(--td-Verylightgray);
+}
+
+/* ==============================
+   Layout
+   ============================== */
+
+.container {
+  max-width: 375px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  margin-top: auto;
+  margin-bottom: 0 !important;
+}
+
+.container > * + * {
+  margin-bottom: 1.67rem;
+}
+
+.container:nth-child(1) {
+  background-color: var(--bg-Brightorange);
+  border-radius: 0.5rem 0.5rem 0 0;
+  margin-top: 30px;
+}
+
+.container:nth-child(1) a {
+  color: var(--bg-Brightorange);
+}
+
+.container:nth-child(2) {
+  background-color: var(--bg-Darkcyan);
+}
+.container:nth-child(2) a {
+  color: var(--bg-Darkcyan);
+}
+
+.container:nth-child(3) {
+  background-color: var(--bg-Verydarkcyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+  margin-bottom: 30px;
+}
+.container:nth-child(3) a {
+  color: var(--bg-Verydarkcyan);
+}
+
+/* ================================
+       Typography
+       ================================ */
